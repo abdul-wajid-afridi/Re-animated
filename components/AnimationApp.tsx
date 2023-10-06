@@ -1,4 +1,4 @@
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, ScrollView } from 'react-native';
 
 import Spinner from './animations/spinner';
 import FirstAnimation from './animations/FirstAnimation';
@@ -8,18 +8,18 @@ import OffSetAnimation from './animations/OffSetAnimation';
 import CustomLoader from './animations/CustomLoader';
 import ListAnimations from './animations/ListAnimations';
 
-export default function App() {
+export default function AnimationApp() {
   return (
-    <View style={styles.container}>
+    <ScrollView >
       {/* <UseAnimatedAnimation/> */}
       {/* <WithTimeAnimation/> */}
       {/* <OffSetAnimation/> */}
       {/* <FirstAnimation/> */}
       {/* <CustomLoader/> */}
-      {/* <ListAnimations/> */}
-      <Spinner  />
+      <ListAnimations/>
+      {/* <Spinner  /> */}
       {/* <Text>show me some thing</Text> */}
-    </View>
+    </ScrollView>
   );
 }
 

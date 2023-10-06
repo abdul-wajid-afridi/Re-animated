@@ -19,7 +19,7 @@ const ListAnimations = () => {
     
 
     const handleDelete=(id:number)=>{
-        LayoutAnimation.linear()
+        // LayoutAnimation.linear()
         // LayoutAnimation.spring()
         // LayoutAnimation.easeInEaseOut()
       setData(data.filter(it=>it.id!==id))
@@ -33,8 +33,10 @@ const ListAnimations = () => {
             </TouchableOpacity>
         }}/> */}
         <FlashList
-
-estimatedItemSize={200}
+estimatedItemSize={177}
+estimatedListSize={{
+    height:100,width:200
+}}
 
         data={data} renderItem={({item})=>{
             return <TouchableOpacity style={styles.list}  key={item.id} onPress={()=>handleDelete(item.id)}>
@@ -56,10 +58,8 @@ const styles = StyleSheet.create({
         width:'100%',
     },
     list:{
-        padding:20,
+        height:100,
         backgroundColor:"#f8dff8",
-        width:200,
-        flex:1,
         justifyContent:"center",
         alignItems:"center",
         margin:5
