@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import Branch2 from "./components/branch-2";
 
-const App = () => {
+const Branch2 = () => {
   return (
     <View>
-      <Branch2 />
+      <Text>Branch2 "first commit"</Text>
+      <Text>Branch2 "2nd commit"</Text>
     </View>
   );
 };
 
-export default App;
+export default Branch2;
 
 const styles = StyleSheet.create({});
