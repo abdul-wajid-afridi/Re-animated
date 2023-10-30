@@ -6,7 +6,6 @@ const Branch2 = () => {
     <View>
       <Text>Branch2 "first commit"</Text>
       <Text>Branch2 "2nd commit"</Text>
-      <Text>Branch2 "3rd commit"</Text>
     </View>
   );
 };
